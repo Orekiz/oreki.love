@@ -10,7 +10,7 @@ import Footer from './Footer.vue'
 <template>
   <main text="gray-800 dark:gray-100" w-full h-full flex justify-center items-center>
     <div z--1 fixed top-0 w-screen h-screen bg-bottom bg-no-repeat class="backgroundimg lt-md:bg-cover"></div>
-    <section my-max-width class="lt-md:p-10">
+    <section my-max-width class="lt-md:p-10" transform="translate-y--16">
       <h1 lh-10 font-black text-9 bg-transparent hover="bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent" transition cursor-default>
         Oreki
       </h1>

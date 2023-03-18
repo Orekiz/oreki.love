@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer from './Footer.vue'
   const links = [
     { url: 'https://notes.oreki.love', icon: 'i-mdi-notebook' },
     { url: 'https://music.oreki.love', icon: 'i-mdi-music' },
@@ -7,9 +8,9 @@
 </script>
 
 <template>
-  <main w-full h-full flex justify-center items-center>
+  <main text="gray-800 dark:gray-100" w-full h-full flex justify-center items-center>
     <div z--1 fixed top-0 w-screen h-screen bg-bottom bg-no-repeat class="backgroundimg lt-md:bg-cover"></div>
-    <section container max-w="2xl" class="lt-md:p-10">
+    <section my-max-width class="lt-md:p-10">
       <h1 lh-10 font-black text-9 bg-transparent hover="bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent" transition cursor-default>
         Oreki
       </h1>
@@ -19,6 +20,7 @@
       </section>
     </section>
   </main>
+  <Footer />
 </template>
 
 <style scope>
@@ -26,5 +28,9 @@
   background: url('../assets/hero@75.b2469a49.jpg');
   background-color: rgb(248 250 252);
   background-size: 150rem;
+}
+.dark .backgroundimg {
+  background: url('../assets/hero-dark@90.dba36cdf.jpg');
+  background-size: 80rem;
 }
 </style>

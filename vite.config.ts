@@ -14,6 +14,9 @@ export default defineConfig({
         presetUno(),
         presetIcons()
       ],
+      shortcuts: {
+        'my-max-width': 'w-full max-w-2xl'
+      }
     }),
   ],
 })

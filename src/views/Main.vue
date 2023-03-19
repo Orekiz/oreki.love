@@ -31,6 +31,9 @@ import Footer from './Footer.vue'
 }
 .dark .backgroundimg {
   background: url('../assets/hero-dark@90.dba36cdf.jpg');
+  background-repeat: no-repeat;
+  background-color: rgb(11, 17, 33);
   background-size: 80rem;
+  background-position-x: -30rem;
 }
 </style>
